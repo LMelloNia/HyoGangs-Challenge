@@ -15,7 +15,7 @@ class SecondViewController: UIViewController, UITableViewDataSource {
     
     let tb2 = UITableView()
     let tableViewData1 = ["한놈","두식이","석삼"]
-    let tableViewData2 = ["one","two","three"]
+//    let tableViewData2 = ["one","two","three"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,7 @@ class SecondViewController: UIViewController, UITableViewDataSource {
     
     func makeTableView() {
         view.addSubview(tb2)
+        tb2.layer.borderWidth = 1
         tb2.backgroundColor = .green
         tb2.translatesAutoresizingMaskIntoConstraints = false
         tb2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true

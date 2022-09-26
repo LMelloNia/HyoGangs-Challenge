@@ -15,7 +15,7 @@ class PopViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func makeUI() {
-        let popView = PopViewController()
+//        let popView = PopViewController()
         
     }
 
