@@ -13,28 +13,30 @@ class SecondViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView1: UITableView!
     
-    let tb2 = UITableView()
+    
+    
     let tableViewData1 = ["한놈","두식이","석삼"]
-//    let tableViewData2 = ["one","two","three"]
+//
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        makeTableView()
+//        makeTableView()
+        
         tableView1.dataSource = self
         tableView1.delegate = self
         // Do any additional setup after loading the view.
     }
     
-    func makeTableView() {
-        view.addSubview(tb2)
-        tb2.layer.borderWidth = 1
-        tb2.backgroundColor = .green
-        tb2.translatesAutoresizingMaskIntoConstraints = false
-        tb2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
-        tb2.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
-        tb2.topAnchor.constraint(equalTo: tableView1.bottomAnchor, constant: 30).isActive = true
-        tb2.heightAnchor.constraint(equalToConstant: 100).isActive = true
-    }
+//    func makeTableView() {
+//        view.addSubview(tb2)
+//        tb2.layer.borderWidth = 1
+//        tb2.backgroundColor = .green
+//        tb2.translatesAutoresizingMaskIntoConstraints = false
+//        tb2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
+//        tb2.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
+//        tb2.topAnchor.constraint(equalTo: tableView1.bottomAnchor, constant: 30).isActive = true
+//        tb2.heightAnchor.constraint(equalToConstant: 100).isActive = true
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableViewData1.count

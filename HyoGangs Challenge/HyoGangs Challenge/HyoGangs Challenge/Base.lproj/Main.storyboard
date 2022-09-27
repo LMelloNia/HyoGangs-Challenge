@@ -17,51 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTt-Pc-vPx">
-                                <rect key="frame" x="132.66666666666666" y="387" width="124.66666666666666" height="70.333333333333314"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2c-Qw-Xli">
+                                <rect key="frame" x="70" y="467" width="250" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="124.67" id="6Np-OA-wmV"/>
-                                    <constraint firstAttribute="height" constant="70.329999999999998" id="oUN-dP-H11"/>
+                                    <constraint firstAttribute="height" constant="50" id="PBO-Pq-8cv"/>
+                                    <constraint firstAttribute="width" constant="250" id="nTq-j9-Ckq"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Push">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="47"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="스토리보드로 만든 테이블뷰"/>
                                 <connections>
-                                    <action selector="pushButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MJL-tO-QGP"/>
+                                    <segue destination="Jf6-6d-Hlt" kind="show" id="CTy-se-Fbm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2c-Qw-Xli">
-                                <rect key="frame" x="157.66666666666666" y="623" width="75" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="PBO-Pq-8cv"/>
-                                    <constraint firstAttribute="width" constant="75" id="nTq-j9-Ckq"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTt-Pc-vPx">
+                                <rect key="frame" x="76.000000000000014" y="187" width="238.33333333333337" height="50"/>
+                                <color key="tintColor" red="0.1843137443" green="0.42352938649999999" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="스토리보드로 푸시">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <action selector="secondButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGn-fB-V26"/>
-                                    <segue destination="Jf6-6d-Hlt" kind="show" id="a7A-ur-HDS"/>
+                                    <segue destination="8X4-WX-e6J" kind="show" id="fUL-de-t8x"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="q2c-Qw-Xli" firstAttribute="top" secondItem="MTt-Pc-vPx" secondAttribute="bottom" constant="165.66999999999999" id="CkF-kb-7VZ"/>
-                            <constraint firstItem="MTt-Pc-vPx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LZL-x6-LFM"/>
-                            <constraint firstItem="MTt-Pc-vPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S2Q-uX-ziA"/>
-                            <constraint firstItem="q2c-Qw-Xli" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d3E-Zq-Yoh"/>
+                            <constraint firstItem="MTt-Pc-vPx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-210" id="MSC-My-Cr3"/>
+                            <constraint firstItem="MTt-Pc-vPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cHB-dx-xwR"/>
+                            <constraint firstItem="q2c-Qw-Xli" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="70" id="hTO-kZ-ocV"/>
+                            <constraint firstItem="q2c-Qw-Xli" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y6c-Nb-Qn2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="s2I-Ie-2Jn"/>
-                    <connections>
-                        <outlet property="pushButton" destination="MTt-Pc-vPx" id="SzY-Wa-omH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190.7692307692307" y="-18.48341232227488"/>
+            <point key="canvasLocation" x="1162" y="-42"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="OZo-Xq-vCm">
@@ -102,10 +95,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="FYl-JO-AW3">
-                                        <rect key="frame" x="0.0" y="137.33333587646484" width="240" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="137.33333587646484" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FYl-JO-AW3" id="zfO-YS-kgp">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="0.0"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -126,7 +119,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7iv-Il-pmR"/>
                     <connections>
-                        <outlet property="tableView1" destination="fUi-gX-i4L" id="XfY-xk-RRv"/>
+                        <outlet property="tableView1" destination="fUi-gX-i4L" id="Q1L-GA-Oc2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z3S-bf-8op" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -156,6 +149,7 @@
                             <constraint firstItem="7Ou-Sj-cdn" firstAttribute="centerX" secondItem="7eb-Pn-wFK" secondAttribute="centerX" id="xsu-DB-Zbq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3Kc-Y3-E90"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lgw-9g-Fhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
